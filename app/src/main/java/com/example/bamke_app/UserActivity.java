@@ -25,11 +25,11 @@ public class UserActivity extends AppCompatActivity {
     ImageButton btnStartPause;
     ImageButton btnStop;
     ImageButton btnReset;
-    long segundos;
+    private static long START_TIME_IN_MILLIS = 900000;
     private TextView tiempo;
     private CountDownTimer mCountDownTimer;
     private boolean mTimerRunning;
-    long mTimeLeftInMillis = segundos;
+    long mTimeLeftInMillis = START_TIME_IN_MILLIS;
 
 
     @Override
@@ -70,20 +70,19 @@ public class UserActivity extends AppCompatActivity {
         rbtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                segundos = 900;
                 updateCountDownText();
 
             }
         });
 
 
-        rbtn2.setOnClickListener(new View.OnClickListener() {
+        /*rbtn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                segundos = 1200;
+
                 updateCountDownText();
             }
-        });
+        });*/
         btnStartPause.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -132,7 +131,7 @@ public class UserActivity extends AppCompatActivity {
     }
 
     private void resetTimer() {
-        mTimeLeftInMillis = segundos;
+        mTimeLeftInMillis = START_TIME_IN_MILLIS;
         updateCountDownText();
         btnStop.setVisibility(View.INVISIBLE);
         btnStartPause.setVisibility(View.VISIBLE);
