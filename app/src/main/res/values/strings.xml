@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Bamke_App</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="web_client_id">379463985018-ciffvb6mrq7n43lru42f9627q5ajeqcv.apps.googleusercontent.com</string>
+</resources>
